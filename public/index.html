@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Home</title>
+    <link rel="stylesheet" href="css/css.css">
+    <link rel=" stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+        integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+</head>
+
+
+<body>
+
+    <!-- //_____________________________________________________________________________________________topDiv -->
+
+    <div class="topContiner">
+
+        <div class="box1">
+
+            <h3 id="AvailableDate"></h3>
+
+            <h1 id="Balance">0.00</h1>
+
+            <div id="Income">
+                <p id="coloeBlack">Income</p>
+                <p id="showIncomesSum">0</p>
+            </div>
+
+            <div id="Expenses">
+                <p id="coloeBlack">Expenses</p>
+                <p id="showOutomesSum">0 </p>
+                <p id="outcomesPercentage"></p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- //_____________________________________________________________________________________________middleDiv -->
+    <div id="userErrorMessage">Please enter a proper description and amount, description and amount need to be entered together.<i id="errorIcon" class="fas fa-times-circle"></i></div>
+    <div class="middleContiner">
+
+        <div class="box2">
+            <select name="" id="type">
+                <option value="/incomes">+</option>
+                <option value="/outcomes">-</option>
+            </select>
+
+            <input type="text" name="" id="incomeOrOutcomeDescription" placeholder="Add description">
+            <input type="number" name="" id="incomeOrOutcomeAmount" placeholder="Value">
+            <span><i class="far fa-check-circle" onclick="createIncomeOrOutcome()" id="icon"></i></span>
+        </div>
+
+    </div>
+
+    <!-- //_____________________________________________________________________________________________bottomDiv1 -->
+
+    <div class="bottomContiner1">
+
+        <div class="box3">
+
+            <p>INCOME</p>
+
+            <div id="incomesContiner"></div>
+
+        </div>
+
+
+        <!-- //_____________________________________________________________________________________________bottomDiv2 -->
+
+        <div class="box4">
+
+            <p>EXPENSES</p>
+
+            <div id="outcomesContiner"></div>
+
+        </div>
+
+    </div>
+
+    <!-- //_____________________________________________________________________________________________ script-->
+
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+</body>
+
+</html>

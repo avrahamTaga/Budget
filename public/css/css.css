@@ -1,0 +1,165 @@
+/* Basic */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* Top container_______________________________________________________________*/
+
+
+.topContiner {
+    min-height: 37vh;
+    background-image: url(/img/pocket-watch-1637394__340.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.box1 {
+    padding-top: 22px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 1rem;
+    font-size: 1.3rem;
+}
+
+.box1>* {
+    margin-bottom: 10px;
+}
+
+
+
+#Income {
+    display: flex;
+    border: 1px solid black;
+    background-color: rgb(59, 185, 168);
+    width: 20%;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+#Income>* {
+    margin-right: 10px;
+}
+
+#coloeBlack {
+    color: black;
+}
+
+#Expenses {
+    display: flex;
+    background-color: rgb(230, 84, 84);
+    border: 1px solid black;
+    width: 20%;
+    padding: 0.5rem;
+}
+
+#Expenses>* {
+    margin-right: 10px;
+}
+
+#Expenses #showOutomesSum {
+    margin-left: auto;
+}
+
+#userErrorMessage{
+    display: none;
+    border: 2px solid black;
+    border-radius: 7px;
+    width: 30%;
+    height: 6rem;
+    position: absolute;
+    background-color: rgb(255, 123, 123);
+    margin-left: 42.4rem;   
+    color: white;
+}
+
+#errorIcon{
+    position: absolute;
+    font-size: 2rem;
+    margin-left: 8rem;
+    color: black;
+}
+
+/* Middle Container_______________________________________________________________*/
+
+.middleContiner {
+    padding: 1.3rem;
+    background-color: rgb(241, 237, 237);
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+}
+
+.box2>* {
+    margin-right: 0.2rem;
+    padding: 0.3rem;
+    border-radius: 5px;
+
+}
+
+.fa-check-circle {
+    font-size: 2rem;
+}
+
+#incomeOrOutcomeDescription {
+    flex: 0 0 22%;
+}
+
+
+/* Bottom Container_______________________________________________________________*/
+
+
+.bottomContiner1 {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.box4 {
+    color: rgb(230, 84, 84);
+    flex: 0 0 30%;
+}
+
+.box3 {
+    color: rgb(59, 185, 168);
+    flex: 0 0 30%;
+}
+
+/* #incomesContiner:nth-of-type(n+1) {
+    background-color: grey;
+} */
+
+.removeData {
+    padding: 0.6rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.removeData> :first-child {
+    margin-left: auto;
+    margin-right: 0.8rem;
+}
+
+.removeData:hover>#icon1 {
+    opacity: 2;
+}
+
+#icon1 {
+    opacity: 0;
+}

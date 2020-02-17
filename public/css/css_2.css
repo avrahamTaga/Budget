@@ -1,0 +1,123 @@
+/* Basic */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    line-height: 1.5;
+}
+
+/* Top container */
+
+.topContiner {
+    min-height: 35vh;
+    background-color: blue;
+}
+
+.box1 {
+    padding-top: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: 1rem;
+}
+
+.box1 > * {
+    margin-bottom: 10px;
+}
+
+#Income {
+    display: flex;
+    border: 1px solid black;
+    width: 20%;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+#Income > * {
+    margin-right: 10px;
+}
+
+#Expenses {
+    display: flex;
+    border: 1px solid black;
+    width: 20%;
+    padding: 0.5rem;
+}
+
+#Expenses > * {
+    margin-right: 10px;
+}
+
+#Expenses #showOutomesSum {
+    margin-left: auto;
+}
+
+/* Middle Container */
+
+.middleContiner {
+    padding: 1.5rem;
+    background-color: chartreuse;
+}
+
+.box2 {
+    display: flex;
+    justify-content: center;
+}
+
+.box2 > * {
+    margin-right: 0.2rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+.fa-check-circle {
+    font-size: 1.2rem;
+}
+
+#incomeOrOutcomeDescription {
+    flex: 0 0 20%;
+}
+
+
+/* Bottom */
+
+.bottomContiner1 {
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-around;
+    font-size: 20px;
+}
+
+.box3, .box4 {
+    flex: 0 0 30%;
+}
+
+/* #incomesContiner:nth-of-type(n+1) {
+    background-color: grey;
+} */
+
+.removeData  {
+    padding: 1rem;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.removeData > :first-child {
+    margin-left: auto;
+    margin-right: 0.8rem;
+}
+
+/* .removeData p {
+    margin
+} */
+
+
+
