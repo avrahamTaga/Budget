@@ -214,4 +214,3 @@ function percentageOfIncomesOutcomes(incomes, outcomes) {
 errorIcon.onclick = function () {
     userError.style.display = 'none';
 }
-
