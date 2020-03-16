@@ -24,14 +24,14 @@ function outCome(description, amount, id) {
 
 let outcomes = [];
 
-function historyPage(operation,date,description) {
+function historyPage(operation, date, description) {
     this.operation = operation;
     this.date = date;
     this.description = description;
 }
 
 let history = [
-    new historyPage('post',new Date(),'income')
+    new historyPage('post', new Date(), 'income')
 ]
 
 let incomesIdCounter = 1;
@@ -69,31 +69,13 @@ app.delete('/outcomes/:id', (req, res) => {
     routHelper.handleDeleteData(req, res, outcomes);
 });
 
-app.get('/historey',(req,res)=>{
+app.get('/historey', (req, res) => {
     res.send(history);
 })
 
 app.get('*', (req, res) => {
     res.send('<h1 style = "color : red">404.That’s an error.<br>The requested URL / 4 was not found on this server.<br>That’ s all we know.</h1>');
 })
-
-// app.patch('/incomes/:id', (req, res) => {
-//     const id = req.params.id;
-//     let index = incomes.findIndex(income => income.id == id);
-//     if (index == -1) {
-//         res.sendStatus(404);
-//     } else {
-//         if (req.body.description) {
-//             incomes[index].description = req.body.description;
-//             res.sendStatus(200);
-//         }
-//         if (req.body.amount) {
-//             incomes[index].amount = req.body.amount;
-//             res.sendStatus(200);
-//         }
-//     }
-// });
-
 
 app.listen(PORT, () => {
     console.log(`server is lisening port : ${PORT}`);

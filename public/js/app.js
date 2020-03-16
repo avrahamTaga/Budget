@@ -92,9 +92,9 @@ function createIncomeOrOutcome() {
         showData(outcomes, outcomesContiner, outcomesUrl);
     }
     axios.post(type, {
-            description: description,
-            amount: amount
-        })
+        description: description,
+        amount: amount
+    })
         .then(function (response) {
             if (response.status == 201) {
                 if (type == '/incomes') {
@@ -142,11 +142,11 @@ function showData(array, continerDivName, urlAddress) {
 
 
         incomeOrOutcomesElement.onclick = function (e) {
-            if (e.target.classList.contains("delete")) 
+            if (e.target.classList.contains("delete"))
                 deleteIncomeOrOutcomeById(element.id, this, urlAddress);
-            }
         }
     }
+}
 
 
 // __________________________________________________________________________________________deleteIncomeOrOutcomeByIdFun
@@ -215,31 +215,3 @@ errorIcon.onclick = function () {
     userError.style.display = 'none';
 }
 
-// __________________________________________________________________________________________percentageOfAnyOutcomes
-
-// function percentageOfAnyOutcomes(outcomes, incomesSum) {
-//     for (let index = 0; index < outcomes.length; index++) {
-//         const element = outcomes[index];
-//         element.percentage = Math.floor((element.amount / incomesSum) * 100);
-//         if (element.percentage == Infinity) {
-//             element.percentage = 0;
-//         }
-//     } 
-// }
-
-function bottomPercentage(array) {
-
-    // console.log(percentage[0]);
-
-    let percent;
-    console.log(array);
-    for (let index = 0; index < array.length; index++) {
-        const element = array[index];
-        percent = Math.floor((element / incomesSum) * 100);
-        // console.log(percentage[index]);
-
-        // percentage[index].innerText = percent;
-        // console.log(percentage);
-        console.log(percent);
-    }
-}

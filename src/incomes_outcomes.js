@@ -3,8 +3,6 @@ function handleGetArray(res, array) {
 }
 module.exports.handleGetArray = handleGetArray;
 
-
-
 function handleDeleteData(req, res, array) {
     let id = req.params.id
     // --- check if income exist , if not send 404
@@ -18,8 +16,6 @@ function handleDeleteData(req, res, array) {
     }
 }
 module.exports.handleDeleteData = handleDeleteData;
-
-
 
 function handleCreateData(req, res, array, idCounter) {
     // --- retrive body from request
