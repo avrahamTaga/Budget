@@ -1,165 +1,266 @@
 /* Basic */
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 100%;
-    line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  line-height: 1.5;
 }
 
 /* Top container_______________________________________________________________*/
 
-
 .topContiner {
-    min-height: 37vh;
-    background-image: url(/img/pocket-watch-1637394__340.webp);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
+  min-height: 37vh;
+  background-image: url(/img/pocket-watch-1637394__340.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
 }
 
 .box1 {
-    padding-top: 22px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-    /* justify-content: center; */
-    padding: 1rem;
-    font-size: 1.3rem;
+  padding-top: 22px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  /* justify-content: center; */
+  padding: 1rem;
+  font-size: 1.3rem;
 }
 
-.box1>* {
-    margin-bottom: 10px;
+.box1 > * {
+  margin-bottom: 10px;
 }
-
-
 
 #Income {
-    display: flex;
-    border: 1px solid black;
-    background-color: rgb(59, 185, 168);
-    width: 20%;
-    justify-content: space-between;
-    padding: 0.5rem;
+  display: flex;
+  border: 1px solid black;
+  background-color: rgb(59, 185, 168);
+  width: 25%;
+  justify-content: space-between;
+  padding: 0.5rem;
 }
 
-#Income>* {
-    margin-right: 10px;
+#Income > * {
+  margin-right: 10px;
 }
 
 #coloeBlack {
-    color: black;
+  color: black;
 }
 
 #Expenses {
-    display: flex;
-    background-color: rgb(230, 84, 84);
-    border: 1px solid black;
-    width: 20%;
-    padding: 0.5rem;
+  display: flex;
+  background-color: rgb(230, 84, 84);
+  border: 1px solid black;
+  width: 25%;
+  padding: 0.5rem;
 }
 
-#Expenses>* {
-    margin-right: 10px;
+#Expenses > * {
+  margin-right: 10px;
 }
 
 #Expenses #showOutomesSum {
-    margin-left: auto;
+  margin-left: auto;
 }
 
-#userErrorMessage{
-    display: none;
-    border: 2px solid black;
-    border-radius: 7px;
-    width: 30%;
-    height: 6rem;
-    position: absolute;
-    background-color: rgb(255, 123, 123);
-    margin-left: 42.4rem;   
-    color: white;
+#userErrorMessage {
+  display: none;
+  border: 2px solid black;
+  border-radius: 7px;
+  width: 30%;
+  height: 6rem;
+  position: absolute;
+  background-color: rgb(255, 123, 123);
+  margin-left: 42.4rem;
+  color: white;
 }
 
-#errorIcon{
-    position: absolute;
-    font-size: 2rem;
-    margin-left: 8rem;
-    color: black;
+#errorIcon {
+  position: absolute;
+  font-size: 2rem;
+  margin-left: 8rem;
+  color: black;
 }
 
 /* Middle Container_______________________________________________________________*/
 
 .middleContiner {
-    padding: 1.3rem;
-    background-color: rgb(241, 237, 237);
+  padding: 1.3rem;
+  background-color: rgb(241, 237, 237);
 }
 
 .box2 {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
-.box2>* {
-    margin-right: 0.2rem;
-    padding: 0.3rem;
-    border-radius: 5px;
-
+.box2 > * {
+  margin-right: 0.2rem;
+  padding: 0.3rem;
+  border-radius: 5px;
 }
 
 .fa-check-circle {
-    font-size: 2rem;
+  font-size: 2rem;
+}
+
+#type {
+  font-size: 1rem;
 }
 
 #incomeOrOutcomeDescription {
-    flex: 0 0 22%;
+  flex: 0 0 22%;
 }
-
 
 /* Bottom Container_______________________________________________________________*/
 
-
 .bottomContiner1 {
-    padding: 1.5rem;
-    display: flex;
-    justify-content: space-around;
-    font-size: 20px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
 }
 
 .box4 {
-    color: rgb(230, 84, 84);
-    flex: 0 0 30%;
+  color: rgb(230, 84, 84);
+  flex: 0 0 30%;
 }
 
 .box3 {
-    color: rgb(59, 185, 168);
-    flex: 0 0 30%;
+  color: rgb(59, 185, 168);
+  flex: 0 0 30%;
 }
 
-/* #incomesContiner:nth-of-type(n+1) {
-    background-color: grey;
-} */
+#incomesContiner {
+  width: 110%;
+}
+
+#outcomesContiner {
+  width: 110%;
+}
 
 .removeData {
-    padding: 0.6rem;
-    border-bottom: 1px solid black;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    font-size: 1.4rem;
+  padding: 0.6rem;
+  border-bottom: 1px solid black;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  font-size: 1.4rem;
 }
 
-.removeData> :first-child {
-    margin-left: auto;
-    margin-right: 0.8rem;
+.removeData > :first-child {
+  margin-left: auto;
+  margin-right: 0.8rem;
 }
 
-.removeData:hover>#icon1 {
-    opacity: 2;
+.removeData:hover > #icon1 {
+  opacity: 2;
 }
 
 #icon1 {
-    opacity: 0;
+  opacity: 0;
+}
+
+/* responsive styles */
+
+@media screen and (max-width: 1295px) {
+  #Expenses {
+    width: 28%;
+  }
+  #Income {
+    width: 28%;
+  }
+}
+
+@media screen and (max-width: 1158px) {
+  #Expenses {
+    width: 34%;
+  }
+  #Income {
+    width: 34%;
+  }
+}
+
+@media screen and (max-width: 1117px) {
+  #Expenses {
+    width: 40%;
+  }
+  #Income {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  #Expenses {
+    width: 44%;
+  }
+  #Income {
+    width: 44%;
+  }
+}
+
+@media screen and (max-width: 863px) {
+  #Expenses {
+    width: 48%;
+  }
+  #Income {
+    width: 48%;
+  }
+}
+
+@media screen and (max-width: 749px) {
+  #Expenses {
+    width: 52%;
+  }
+  #Income {
+    width: 52%;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  #Expenses {
+    width: 58%;
+  }
+  #Income {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #Expenses {
+    width: 70%;
+  }
+  #Income {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  #Expenses {
+    width: 100%;
+  }
+  #Income {
+    width: 100%;
+  }
+  #AvailableDate {
+    font-size: 1.3rem;
+  }
+  .box2 {
+    display: grid;
+    justify-content: center;
+  }
+
+  #incomesContiner {
+    width: 50%;
+  }
+
+  #outcomesContiner {
+    width: 50%;
+  }
 }

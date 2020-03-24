@@ -1,7 +1,6 @@
 function handleGetArray(res, array) {
     res.send(array);
 }
-module.exports.handleGetArray = handleGetArray;
 
 function handleDeleteData(req, res, array) {
     let id = req.params.id
@@ -15,7 +14,6 @@ function handleDeleteData(req, res, array) {
         res.status(200).send(array);
     }
 }
-module.exports.handleDeleteData = handleDeleteData;
 
 function handleCreateData(req, res, array, idCounter) {
     // --- retrive body from request
@@ -24,4 +22,8 @@ function handleCreateData(req, res, array, idCounter) {
     array.push(data);
     res.status(201).send(data);
 }
+
+
+module.exports.handleGetArray = handleGetArray;
 module.exports.handleCreateData = handleCreateData;
+module.exports.handleDeleteData = handleDeleteData;
